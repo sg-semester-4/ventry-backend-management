@@ -73,9 +73,11 @@ class ItemRepository {
 
   async updateOneByID(ID, item) {
     try {
+      const res1 = await this.setMaxQuantityByID(ID, item.maxQuantity);
+      const res2 = await this.setQuantityByID(ID, item.quantity);
       const sql =
         "update item set code=$1, name=$2, description=$3, unit_type=$4, unit_cost_price=$5, image_url=$6, account_id=$7 where id=$8 returning *";
-      const res = await PostgresDB.pool.query(sql, [
+      const res3 = await PostgresDB.pool.query(sql, [
         item.code,
         item.name,
         item.description,
@@ -85,11 +87,8 @@ class ItemRepository {
         item.accountID,
         ID,
       ]);
-      const res2 = await this.setMaxQuantityByID(ID, item.maxQuantity);
-      const res3 = await this.setQuantityByID(ID, item.quantity);
-      const res4 = await this.readOneByID(ID);
       Debugger.log("ItemRepository", "Update one by ID succeed");
-      return res4;
+      return res3.rows[0];
     } catch (err) {
       Debugger.error("ItemRepository", `Update one by ID failed ${err}`);
     }
