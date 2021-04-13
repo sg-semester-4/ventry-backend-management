@@ -49,24 +49,47 @@ class ItemRepository {
     }
   }
 
+  async setQuantityByID(ID, quantity) {
+    try {
+      const sql = "select f_item_quantity_set($1, $2)";
+      const res = await PostgresDB.pool.query(sql, [ID, quantity]);
+      Debugger.log("ItemRepository", "Set quantity by ID succeed");
+      return res.rows[0];
+    } catch (err) {
+      Debugger.error("ItemRepository", `Set quantity by ID failed ${err}`);
+    }
+  }
+
+  async setMaxQuantityByID(ID, quantity) {
+    try {
+      const sql = "select f_item_max_quantity_optimal_set($1, $2)";
+      const res = await PostgresDB.pool.query(sql, [ID, quantity]);
+      Debugger.log("ItemRepository", "Set max quantity by ID succeed");
+      return res.rows[0];
+    } catch (err) {
+      Debugger.error("ItemRepository", `Set max quantity by ID failed ${err}`);
+    }
+  }
+
   async updateOneByID(ID, item) {
     try {
       const sql =
-        "update item set code=$1, name=$2, description=$3, quantity=$4, max_quantity=$5, unit_type=$6, unit_cost_price=$7, image_url=$8, account_id=$9 where id=$10 returning *";
+        "update item set code=$1, name=$2, description=$3, unit_type=$4, unit_cost_price=$5, image_url=$6, account_id=$7 where id=$8 returning *";
       const res = await PostgresDB.pool.query(sql, [
         item.code,
         item.name,
         item.description,
-        item.quantity,
-        item.maxQuantity,
         item.unitType,
         item.unitCostPrice,
         item.imageURL,
         item.accountID,
         ID,
       ]);
+      const res2 = await this.setMaxQuantityByID(ID, item.maxQuantity);
+      const res3 = await this.setQuantityByID(ID, item.quantity);
+      const res4 = await this.readOneByID(ID);
       Debugger.log("ItemRepository", "Update one by ID succeed");
-      return res.rows[0];
+      return res4;
     } catch (err) {
       Debugger.error("ItemRepository", `Update one by ID failed ${err}`);
     }

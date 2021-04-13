@@ -49,9 +49,9 @@ routes.post("/", async (req, res) => {
     name: name,
     description: description,
     quantity: quantity,
+    max_quantity: maxQuantity,
     unit_type: unitType,
     unit_cost_price: unitCostPrice,
-    unit_sell_price: unitSellPrice,
     image_url: imageURL,
     account_id: accountID,
   } = req.body;
@@ -60,9 +60,9 @@ routes.post("/", async (req, res) => {
     name,
     description,
     quantity,
+    maxQuantity,
     unitType,
     unitCostPrice,
-    unitSellPrice,
     imageURL,
     accountID,
   };
@@ -91,9 +91,9 @@ routes.put("/:id", async (req, res) => {
     name: name,
     description: description,
     quantity: quantity,
+    max_quantity: maxQuantity,
     unit_type: unitType,
     unit_cost_price: unitCostPrice,
-    unit_sell_price: unitSellPrice,
     image_url: imageURL,
     account_id: accountID,
   } = req.body;
@@ -102,9 +102,9 @@ routes.put("/:id", async (req, res) => {
     name,
     description,
     quantity,
+    maxQuantity,
     unitType,
     unitCostPrice,
-    unitSellPrice,
     imageURL,
     accountID,
   };
