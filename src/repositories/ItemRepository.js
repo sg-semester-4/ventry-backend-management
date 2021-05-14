@@ -26,69 +26,75 @@ class ItemRepository {
     }
   }
 
+  
+  async setEstimateQuantityByID(ID, estimateQuantity) {
+    try {
+      const sql = "select f_item_estimate_quantity_set($1, $2)";
+      const res = await PostgresDB.pool.query(sql, [ID, estimateQuantity]);
+      Debugger.log("ItemRepository", "Set estimate quantity by ID succeed");
+      return res.rows[0];
+    } catch (err) {
+      Debugger.error("ItemRepository", `Set estimate quantity by ID failed ${err}`);
+    }
+  }
+
+  async setMaxEstimateQuantityByID(ID, estimateQuantity) {
+    try {
+      const sql = "select f_item_max_estimate_quantity_set($1, $2)";
+      const res = await PostgresDB.pool.query(sql, [ID, estimateQuantity]);
+      Debugger.log("ItemRepository", "Set max estimate quantity by ID succeed");
+      return res.rows[0];
+    } catch (err) {
+      Debugger.error("ItemRepository", `Set max estimate quantity by ID failed ${err}`);
+    }
+  }
+
   async createOne(item) {
     try {
-      const sql =
-        "insert into item(id, code, name, description, quantity, max_quantity, unit_type, unit_cost_price, image_url, account_id) values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) returning *";
-      const res = await PostgresDB.pool.query(sql, [
+      const sql1 =
+        "insert into item(id, code, name, description, availabe_quantity, unit_type, unit_cost_price, image_url, account_id) values ($1, $2, $3, $4, $5, $6, $7, $8, $9) returning *";
+      const res1 = await PostgresDB.pool.query(sql1, [
         item.ID,
         item.code,
         item.name,
         item.description,
-        item.quantity,
-        item.maxQuantity,
+        item.availableQuantity,
         item.unitType,
         item.unitCostPrice,
         item.imageURL,
         item.accountID,
       ]);
+      const res2 = await this.setMaxEstimateQuantityByID(ID, item.maxEstimateQuantity);
+      const res3 = await this.setEstimateQuantityByID(ID, item.estimateQuantity);
+      const res4 = await this.readOneByID(ID)
       Debugger.log("ItemRepository", "Create one succeed");
-      return res.rows[0];
+      return res4;
     } catch (err) {
       Debugger.error("ItemRepository", `Create one failed ${err}`);
     }
   }
 
-  async setQuantityByID(ID, quantity) {
-    try {
-      const sql = "select f_item_quantity_set($1, $2)";
-      const res = await PostgresDB.pool.query(sql, [ID, quantity]);
-      Debugger.log("ItemRepository", "Set quantity by ID succeed");
-      return res.rows[0];
-    } catch (err) {
-      Debugger.error("ItemRepository", `Set quantity by ID failed ${err}`);
-    }
-  }
-
-  async setMaxQuantityByID(ID, quantity) {
-    try {
-      const sql = "select f_item_max_quantity_optimal_set($1, $2)";
-      const res = await PostgresDB.pool.query(sql, [ID, quantity]);
-      Debugger.log("ItemRepository", "Set max quantity by ID succeed");
-      return res.rows[0];
-    } catch (err) {
-      Debugger.error("ItemRepository", `Set max quantity by ID failed ${err}`);
-    }
-  }
 
   async updateOneByID(ID, item) {
     try {
-      const res1 = await this.setMaxQuantityByID(ID, item.maxQuantity);
-      const res2 = await this.setQuantityByID(ID, item.quantity);
-      const sql =
-        "update item set code=$1, name=$2, description=$3, unit_type=$4, unit_cost_price=$5, image_url=$6, account_id=$7 where id=$8 returning *";
-      const res3 = await PostgresDB.pool.query(sql, [
+      const sql1 =
+        "update item set code=$1, name=$2, description=$3, available_quantity=$4, unit_type=$5, unit_cost_price=$6, image_url=$7, account_id=$8 where id=$9 returning *";
+      const res1 = await PostgresDB.pool.query(sql1, [
         item.code,
         item.name,
         item.description,
+        item.availableQuantity,
         item.unitType,
         item.unitCostPrice,
         item.imageURL,
         item.accountID,
         ID,
       ]);
+      const res2 = await this.setMaxEstimateQuantityByID(ID, item.maxEstimateQuantity);
+      const res3 = await this.setEstimateQuantityByID(ID, item.estimateQuantity);
+      const res4 = await this.readOneByID(ID)
       Debugger.log("ItemRepository", "Update one by ID succeed");
-      return res3.rows[0];
+      return res4;
     } catch (err) {
       Debugger.error("ItemRepository", `Update one by ID failed ${err}`);
     }
