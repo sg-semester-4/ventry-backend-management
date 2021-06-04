@@ -101,13 +101,13 @@ routes.delete("/:id", async (req, res) => {
   if (!deletedAccount) {
     data = {
       status: 403,
-      message: "Update account failed",
+      message: "Delete account failed",
       data: null,
     };
   } else {
     data = {
       status: 200,
-      message: "Update account succeed",
+      message: "Delete account succeed",
       data: deletedAccount,
     };
   }

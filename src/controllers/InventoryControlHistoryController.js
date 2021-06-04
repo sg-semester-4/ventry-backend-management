@@ -118,13 +118,13 @@ routes.delete("/:id", async (req, res) => {
   if (!deletedInventoryControl) {
     data = {
       status: 403,
-      message: "Update inventory control history failed",
+      message: "Delete inventory control history failed",
       data: null,
     };
   } else {
     data = {
       status: 200,
-      message: "Update inventory control history succeed",
+      message: "Delete inventory control history succeed",
       data: deletedInventoryControl,
     };
   }
