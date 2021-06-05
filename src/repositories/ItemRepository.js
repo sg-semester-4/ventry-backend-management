@@ -26,7 +26,6 @@ class ItemRepository {
     }
   }
 
-  
   async setEstimateQuantityByID(ID, estimateQuantity) {
     try {
       const sql = "select f_item_estimate_quantity_set($1, $2)";
@@ -34,46 +33,59 @@ class ItemRepository {
       Debugger.log("ItemRepository", "Set estimate quantity by ID succeed");
       return res.rows[0];
     } catch (err) {
-      Debugger.error("ItemRepository", `Set estimate quantity by ID failed ${err}`);
+      Debugger.error(
+        "ItemRepository",
+        `Set estimate quantity by ID failed ${err}`
+      );
     }
   }
 
-  async setMaxEstimateQuantityByID(ID, estimateQuantity) {
+  async setMaxEstimateQuantityByID(ID, maxEstimateQuantity) {
     try {
       const sql = "select f_item_max_estimate_quantity_set($1, $2)";
-      const res = await PostgresDB.pool.query(sql, [ID, estimateQuantity]);
+      const res = await PostgresDB.pool.query(sql, [ID, maxEstimateQuantity]);
       Debugger.log("ItemRepository", "Set max estimate quantity by ID succeed");
       return res.rows[0];
     } catch (err) {
-      Debugger.error("ItemRepository", `Set max estimate quantity by ID failed ${err}`);
+      Debugger.error(
+        "ItemRepository",
+        `Set max estimate quantity by ID failed ${err}`
+      );
     }
   }
 
   async createOne(item) {
     try {
       const sql1 =
-        "insert into item(id, code, name, description, availabe_quantity, unit_type, unit_cost_price, image_url, account_id) values ($1, $2, $3, $4, $5, $6, $7, $8, $9) returning *";
+        "insert into item(id, code, name, description, available_quantity, estimate_quantity, max_estimate_quantity, unit_type, unit_cost_price, image_url, account_id) values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) returning *";
       const res1 = await PostgresDB.pool.query(sql1, [
         item.ID,
         item.code,
         item.name,
         item.description,
         item.availableQuantity,
+        0,
+        0,
         item.unitType,
         item.unitCostPrice,
         item.imageURL,
         item.accountID,
       ]);
-      const res2 = await this.setMaxEstimateQuantityByID(ID, item.maxEstimateQuantity);
-      const res3 = await this.setEstimateQuantityByID(ID, item.estimateQuantity);
-      const res4 = await this.readOneByID(ID)
+      const res2 = await this.setMaxEstimateQuantityByID(
+        item.ID,
+        item.maxEstimateQuantity
+      );
+      const res3 = await this.setEstimateQuantityByID(
+        item.ID,
+        item.estimateQuantity
+      );
+      const res4 = await this.readOneByID(item.ID);
       Debugger.log("ItemRepository", "Create one succeed");
       return res4;
     } catch (err) {
       Debugger.error("ItemRepository", `Create one failed ${err}`);
     }
   }
-
 
   async updateOneByID(ID, item) {
     try {
@@ -90,9 +102,15 @@ class ItemRepository {
         item.accountID,
         ID,
       ]);
-      const res2 = await this.setMaxEstimateQuantityByID(ID, item.maxEstimateQuantity);
-      const res3 = await this.setEstimateQuantityByID(ID, item.estimateQuantity);
-      const res4 = await this.readOneByID(ID)
+      const res2 = await this.setMaxEstimateQuantityByID(
+        ID,
+        item.maxEstimateQuantity
+      );
+      const res3 = await this.setEstimateQuantityByID(
+        ID,
+        item.estimateQuantity
+      );
+      const res4 = await this.readOneByID(ID);
       Debugger.log("ItemRepository", "Update one by ID succeed");
       return res4;
     } catch (err) {

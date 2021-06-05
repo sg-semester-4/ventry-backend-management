@@ -32,31 +32,37 @@ class ProductRepository {
       Debugger.log("ProductRepository", "Set estimate quantity by ID succeed");
       return res.rows[0];
     } catch (err) {
-      Debugger.error("ProductRepository", `Set estimate quantity by ID failed ${err}`);
+      Debugger.error(
+        "ProductRepository",
+        `Set estimate quantity by ID failed ${err}`
+      );
     }
   }
 
   async createOne(product) {
     try {
       const sql1 =
-        "insert into product(id, code, name, description, vailable_quantity unit_type, unit_cost_price, unit_sell_price, image_url, account_id) values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) returning *";
+        "insert into product(id, code, name, description, available_quantity, estimate_quantity, unit_type, unit_cost_price, unit_sell_price, image_url, account_id) values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) returning *";
       const res1 = await PostgresDB.pool.query(sql1, [
         product.ID,
         product.code,
         product.name,
         product.description,
         product.availableQuantity,
+        0,
         product.unitType,
         product.unitCostPrice,
         product.unitSellPrice,
         product.imageURL,
         product.accountID,
       ]);
-      const res2 = await this.setEstimateQuantityByID(ID, product.estimateQuantity);
-      const res3 = await this.setEstimateQuantityByID(ID, product.estimateQuantity);
-      const res4 = await this.readOneByID(ID)
+      const res2 = await this.setEstimateQuantityByID(
+        product.ID,
+        product.estimateQuantity
+      );
+      const res3 = await this.readOneByID(product.ID);
       Debugger.log("ProductRepository", "Create one succeed");
-      return res4;
+      return res3;
     } catch (err) {
       Debugger.error("ProductRepository", `Create one failed ${err}`);
     }
@@ -78,8 +84,11 @@ class ProductRepository {
         product.accountID,
         ID,
       ]);
-      const res2 = await this.setEstimateQuantityByID(ID, product.estimateQuantity);
-      const res3 = await this.readOneByID(ID)
+      const res2 = await this.setEstimateQuantityByID(
+        ID,
+        product.estimateQuantity
+      );
+      const res3 = await this.readOneByID(ID);
       Debugger.log("ProductRepository", "Update one by ID succeed");
       return res3;
     } catch (err) {
