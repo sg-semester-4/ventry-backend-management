@@ -1,0 +1,880 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="https://raw.githubusercontent.com/terryyin/lizard/master/lizard.xsl"?>
+<cppncss>
+	<measure type="Function">
+		<labels>
+			<label>Nr.</label>
+			<label>NCSS</label>
+			<label>CCN</label>
+		</labels>
+		<item name="(anonymous)(...) at ./src\controllers\AccountController.js:7">
+			<value>1</value>
+			<value>18</value>
+			<value>2</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\controllers\AccountController.js:26">
+			<value>2</value>
+			<value>19</value>
+			<value>2</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\controllers\AccountController.js:46">
+			<value>3</value>
+			<value>24</value>
+			<value>2</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\controllers\AccountController.js:71">
+			<value>4</value>
+			<value>25</value>
+			<value>2</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\controllers\AccountController.js:97">
+			<value>5</value>
+			<value>19</value>
+			<value>2</value>
+		</item>
+		<average label="NCSS" value="21.0"/>
+		<average label="CCN" value="2.0"/>
+		<item name="(anonymous)(...) at ./src\controllers\AuthenticationController.js:7">
+			<value>6</value>
+			<value>24</value>
+			<value>2</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\controllers\AuthenticationController.js:32">
+			<value>7</value>
+			<value>19</value>
+			<value>2</value>
+		</item>
+		<average label="NCSS" value="21.142857142857142"/>
+		<average label="CCN" value="2.0"/>
+		<item name="(anonymous)(...) at ./src\controllers\InventoryControlHistoryController.js:7">
+			<value>8</value>
+			<value>20</value>
+			<value>2</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\controllers\InventoryControlHistoryController.js:28">
+			<value>9</value>
+			<value>19</value>
+			<value>2</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\controllers\InventoryControlHistoryController.js:48">
+			<value>10</value>
+			<value>30</value>
+			<value>2</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\controllers\InventoryControlHistoryController.js:79">
+			<value>11</value>
+			<value>32</value>
+			<value>2</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\controllers\InventoryControlHistoryController.js:112">
+			<value>12</value>
+			<value>21</value>
+			<value>2</value>
+		</item>
+		<average label="NCSS" value="22.5"/>
+		<average label="CCN" value="2.0"/>
+		<item name="(anonymous)(...) at ./src\controllers\ItemCombinationController.js:7">
+			<value>13</value>
+			<value>18</value>
+			<value>2</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\controllers\ItemCombinationController.js:26">
+			<value>14</value>
+			<value>19</value>
+			<value>2</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\controllers\ItemCombinationController.js:46">
+			<value>15</value>
+			<value>30</value>
+			<value>2</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\controllers\ItemCombinationController.js:77">
+			<value>16</value>
+			<value>32</value>
+			<value>2</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\controllers\ItemCombinationController.js:110">
+			<value>17</value>
+			<value>19</value>
+			<value>2</value>
+		</item>
+		<average label="NCSS" value="22.823529411764707"/>
+		<average label="CCN" value="2.0"/>
+		<item name="(anonymous)(...) at ./src\controllers\ItemController.js:7">
+			<value>18</value>
+			<value>18</value>
+			<value>2</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\controllers\ItemController.js:26">
+			<value>19</value>
+			<value>19</value>
+			<value>2</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\controllers\ItemController.js:46">
+			<value>20</value>
+			<value>42</value>
+			<value>2</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\controllers\ItemController.js:89">
+			<value>21</value>
+			<value>43</value>
+			<value>2</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\controllers\ItemController.js:133">
+			<value>22</value>
+			<value>19</value>
+			<value>2</value>
+		</item>
+		<average label="NCSS" value="24.045454545454547"/>
+		<average label="CCN" value="2.0"/>
+		<item name="(anonymous)(...) at ./src\controllers\ProductController.js:7">
+			<value>23</value>
+			<value>18</value>
+			<value>2</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\controllers\ProductController.js:26">
+			<value>24</value>
+			<value>19</value>
+			<value>2</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\controllers\ProductController.js:46">
+			<value>25</value>
+			<value>42</value>
+			<value>2</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\controllers\ProductController.js:89">
+			<value>26</value>
+			<value>43</value>
+			<value>2</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\controllers\ProductController.js:133">
+			<value>27</value>
+			<value>19</value>
+			<value>2</value>
+		</item>
+		<average label="NCSS" value="24.814814814814813"/>
+		<average label="CCN" value="2.0"/>
+		<item name="(anonymous)(...) at ./src\controllers\ProductItemController.js:7">
+			<value>28</value>
+			<value>18</value>
+			<value>2</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\controllers\ProductItemController.js:26">
+			<value>29</value>
+			<value>19</value>
+			<value>2</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\controllers\ProductItemController.js:46">
+			<value>30</value>
+			<value>28</value>
+			<value>2</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\controllers\ProductItemController.js:75">
+			<value>31</value>
+			<value>32</value>
+			<value>2</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\controllers\ProductItemController.js:108">
+			<value>32</value>
+			<value>19</value>
+			<value>2</value>
+		</item>
+		<average label="NCSS" value="24.5625"/>
+		<average label="CCN" value="2.0"/>
+		<item name="(anonymous)(...) at ./src\controllers\ProductTransactionHistoryController.js:7">
+			<value>33</value>
+			<value>20</value>
+			<value>2</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\controllers\ProductTransactionHistoryController.js:28">
+			<value>34</value>
+			<value>21</value>
+			<value>2</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\controllers\ProductTransactionHistoryController.js:50">
+			<value>35</value>
+			<value>32</value>
+			<value>2</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\controllers\ProductTransactionHistoryController.js:83">
+			<value>36</value>
+			<value>34</value>
+			<value>2</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\controllers\ProductTransactionHistoryController.js:118">
+			<value>37</value>
+			<value>21</value>
+			<value>2</value>
+		</item>
+		<average label="NCSS" value="24.7027027027027"/>
+		<average label="CCN" value="2.0"/>
+		<item name="(anonymous)(...) at ./src\dao\PostgresDB.js:22">
+			<value>38</value>
+			<value>8</value>
+			<value>2</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\dao\PostgresDB.js:18">
+			<value>39</value>
+			<value>6</value>
+			<value>2</value>
+		</item>
+		<item name="connect(...) at ./src\dao\PostgresDB.js:17">
+			<value>40</value>
+			<value>3</value>
+			<value>1</value>
+		</item>
+		<average label="NCSS" value="23.275"/>
+		<average label="CCN" value="1.975"/>
+		<item name="readAll(...) at ./src\repositories\AccountRepository.js:7">
+			<value>41</value>
+			<value>10</value>
+			<value>2</value>
+		</item>
+		<item name="readOneByID(...) at ./src\repositories\AccountRepository.js:18">
+			<value>42</value>
+			<value>10</value>
+			<value>2</value>
+		</item>
+		<item name="createOne(...) at ./src\repositories\AccountRepository.js:29">
+			<value>43</value>
+			<value>16</value>
+			<value>2</value>
+		</item>
+		<item name="updateOneByID(...) at ./src\repositories\AccountRepository.js:46">
+			<value>44</value>
+			<value>16</value>
+			<value>2</value>
+		</item>
+		<item name="deleteOneByID(...) at ./src\repositories\AccountRepository.js:63">
+			<value>45</value>
+			<value>10</value>
+			<value>2</value>
+		</item>
+		<average label="NCSS" value="22.066666666666666"/>
+		<average label="CCN" value="1.9777777777777779"/>
+		<item name="readAll(...) at ./src\repositories\InventoryControlRepository.js:6">
+			<value>46</value>
+			<value>10</value>
+			<value>2</value>
+		</item>
+		<item name="readOneByID(...) at ./src\repositories\InventoryControlRepository.js:17">
+			<value>47</value>
+			<value>13</value>
+			<value>2</value>
+		</item>
+		<item name="createOne(...) at ./src\repositories\InventoryControlRepository.js:31">
+			<value>48</value>
+			<value>18</value>
+			<value>2</value>
+		</item>
+		<item name="updateOneByID(...) at ./src\repositories\InventoryControlRepository.js:50">
+			<value>49</value>
+			<value>20</value>
+			<value>2</value>
+		</item>
+		<item name="deleteOneByID(...) at ./src\repositories\InventoryControlRepository.js:71">
+			<value>50</value>
+			<value>13</value>
+			<value>2</value>
+		</item>
+		<average label="NCSS" value="21.34"/>
+		<average label="CCN" value="1.98"/>
+		<item name="readAll(...) at ./src\repositories\ItemCombinationRepository.js:7">
+			<value>51</value>
+			<value>10</value>
+			<value>2</value>
+		</item>
+		<item name="readOneByID(...) at ./src\repositories\ItemCombinationRepository.js:18">
+			<value>52</value>
+			<value>16</value>
+			<value>2</value>
+		</item>
+		<item name="createOne(...) at ./src\repositories\ItemCombinationRepository.js:35">
+			<value>53</value>
+			<value>16</value>
+			<value>2</value>
+		</item>
+		<item name="updateOneByID(...) at ./src\repositories\ItemCombinationRepository.js:52">
+			<value>54</value>
+			<value>19</value>
+			<value>2</value>
+		</item>
+		<item name="deleteOneByID(...) at ./src\repositories\ItemCombinationRepository.js:72">
+			<value>55</value>
+			<value>13</value>
+			<value>2</value>
+		</item>
+		<average label="NCSS" value="20.745454545454546"/>
+		<average label="CCN" value="1.981818181818182"/>
+		<item name="readAll(...) at ./src\repositories\ItemRepository.js:7">
+			<value>56</value>
+			<value>10</value>
+			<value>2</value>
+		</item>
+		<item name="readOneByID(...) at ./src\repositories\ItemRepository.js:18">
+			<value>57</value>
+			<value>10</value>
+			<value>2</value>
+		</item>
+		<item name="setEstimateQuantityByID(...) at ./src\repositories\ItemRepository.js:29">
+			<value>58</value>
+			<value>13</value>
+			<value>2</value>
+		</item>
+		<item name="setMaxEstimateQuantityByID(...) at ./src\repositories\ItemRepository.js:43">
+			<value>59</value>
+			<value>13</value>
+			<value>2</value>
+		</item>
+		<item name="createOne(...) at ./src\repositories\ItemRepository.js:57">
+			<value>60</value>
+			<value>32</value>
+			<value>2</value>
+		</item>
+		<item name="updateOneByID(...) at ./src\repositories\ItemRepository.js:90">
+			<value>61</value>
+			<value>30</value>
+			<value>2</value>
+		</item>
+		<item name="deleteOneByID(...) at ./src\repositories\ItemRepository.js:121">
+			<value>62</value>
+			<value>10</value>
+			<value>2</value>
+		</item>
+		<average label="NCSS" value="20.306451612903224"/>
+		<average label="CCN" value="1.9838709677419355"/>
+		<item name="readAll(...) at ./src\repositories\ProductItemRepository.js:6">
+			<value>63</value>
+			<value>10</value>
+			<value>2</value>
+		</item>
+		<item name="readOneByID(...) at ./src\repositories\ProductItemRepository.js:17">
+			<value>64</value>
+			<value>10</value>
+			<value>2</value>
+		</item>
+		<item name="createOne(...) at ./src\repositories\ProductItemRepository.js:28">
+			<value>65</value>
+			<value>16</value>
+			<value>2</value>
+		</item>
+		<item name="updateOneByID(...) at ./src\repositories\ProductItemRepository.js:45">
+			<value>66</value>
+			<value>16</value>
+			<value>2</value>
+		</item>
+		<item name="deleteOneByID(...) at ./src\repositories\ProductItemRepository.js:62">
+			<value>67</value>
+			<value>10</value>
+			<value>2</value>
+		</item>
+		<average label="NCSS" value="19.71641791044776"/>
+		<average label="CCN" value="1.9850746268656716"/>
+		<item name="readAll(...) at ./src\repositories\ProductRepository.js:6">
+			<value>68</value>
+			<value>10</value>
+			<value>2</value>
+		</item>
+		<item name="readOneByID(...) at ./src\repositories\ProductRepository.js:17">
+			<value>69</value>
+			<value>10</value>
+			<value>2</value>
+		</item>
+		<item name="setEstimateQuantityByID(...) at ./src\repositories\ProductRepository.js:28">
+			<value>70</value>
+			<value>13</value>
+			<value>2</value>
+		</item>
+		<item name="createOne(...) at ./src\repositories\ProductRepository.js:42">
+			<value>71</value>
+			<value>28</value>
+			<value>2</value>
+		</item>
+		<item name="updateOneByID(...) at ./src\repositories\ProductRepository.js:71">
+			<value>72</value>
+			<value>27</value>
+			<value>2</value>
+		</item>
+		<item name="deleteOneByID(...) at ./src\repositories\ProductRepository.js:99">
+			<value>73</value>
+			<value>10</value>
+			<value>2</value>
+		</item>
+		<average label="NCSS" value="19.438356164383563"/>
+		<average label="CCN" value="1.9863013698630136"/>
+		<item name="readAll(...) at ./src\repositories\ProductTransactionRepository.js:6">
+			<value>74</value>
+			<value>10</value>
+			<value>2</value>
+		</item>
+		<item name="readOneByID(...) at ./src\repositories\ProductTransactionRepository.js:17">
+			<value>75</value>
+			<value>13</value>
+			<value>2</value>
+		</item>
+		<item name="createOne(...) at ./src\repositories\ProductTransactionRepository.js:31">
+			<value>76</value>
+			<value>22</value>
+			<value>2</value>
+		</item>
+		<item name="updateOneByID(...) at ./src\repositories\ProductTransactionRepository.js:54">
+			<value>77</value>
+			<value>21</value>
+			<value>2</value>
+		</item>
+		<item name="deleteOneByID(...) at ./src\repositories\ProductTransactionRepository.js:76">
+			<value>78</value>
+			<value>13</value>
+			<value>2</value>
+		</item>
+		<average label="NCSS" value="19.205128205128204"/>
+		<average label="CCN" value="1.9871794871794872"/>
+		<item name="readAll(...) at ./src\services\AccountService.js:9">
+			<value>79</value>
+			<value>12</value>
+			<value>3</value>
+		</item>
+		<item name="readOneByID(...) at ./src\services\AccountService.js:22">
+			<value>80</value>
+			<value>9</value>
+			<value>2</value>
+		</item>
+		<item name="uuidv4(...) at ./src\services\AccountService.js:34">
+			<value>81</value>
+			<value>8</value>
+			<value>2</value>
+		</item>
+		<item name="updateOneByID(...) at ./src\services\AccountService.js:43">
+			<value>82</value>
+			<value>9</value>
+			<value>2</value>
+		</item>
+		<item name="deleteOneByID(...) at ./src\services\AccountService.js:53">
+			<value>83</value>
+			<value>9</value>
+			<value>2</value>
+		</item>
+		<average label="NCSS" value="18.6144578313253"/>
+		<average label="CCN" value="2.0"/>
+		<item name="register(...) at ./src\services\AuthenticationService.js:9">
+			<value>84</value>
+			<value>27</value>
+			<value>3</value>
+		</item>
+		<item name="login(...) at ./src\services\AuthenticationService.js:37">
+			<value>85</value>
+			<value>23</value>
+			<value>3</value>
+		</item>
+		<average label="NCSS" value="18.764705882352942"/>
+		<average label="CCN" value="2.023529411764706"/>
+		<item name="readAll(...) at ./src\services\InventoryControlHistoryService.js:10">
+			<value>86</value>
+			<value>15</value>
+			<value>3</value>
+		</item>
+		<item name="readOneByID(...) at ./src\services\InventoryControlHistoryService.js:26">
+			<value>87</value>
+			<value>9</value>
+			<value>2</value>
+		</item>
+		<item name="uuidv4(...) at ./src\services\InventoryControlHistoryService.js:41">
+			<value>88</value>
+			<value>13</value>
+			<value>2</value>
+		</item>
+		<item name="updateOneByID(...) at ./src\services\InventoryControlHistoryService.js:55">
+			<value>89</value>
+			<value>20</value>
+			<value>2</value>
+		</item>
+		<item name="deleteOneByID(...) at ./src\services\InventoryControlHistoryService.js:76">
+			<value>90</value>
+			<value>14</value>
+			<value>2</value>
+		</item>
+		<average label="NCSS" value="18.511111111111113"/>
+		<average label="CCN" value="2.033333333333333"/>
+		<item name="readAll(...) at ./src\services\ItemCombinationService.js:9">
+			<value>91</value>
+			<value>12</value>
+			<value>3</value>
+		</item>
+		<item name="readOneByID(...) at ./src\services\ItemCombinationService.js:22">
+			<value>92</value>
+			<value>9</value>
+			<value>2</value>
+		</item>
+		<item name="uuidv4(...) at ./src\services\ItemCombinationService.js:34">
+			<value>93</value>
+			<value>10</value>
+			<value>2</value>
+		</item>
+		<item name="updateOneByID(...) at ./src\services\ItemCombinationService.js:45">
+			<value>94</value>
+			<value>15</value>
+			<value>2</value>
+		</item>
+		<item name="deleteOneByID(...) at ./src\services\ItemCombinationService.js:61">
+			<value>95</value>
+			<value>14</value>
+			<value>2</value>
+		</item>
+		<average label="NCSS" value="18.16842105263158"/>
+		<average label="CCN" value="2.042105263157895"/>
+		<item name="readAll(...) at ./src\services\ItemService.js:9">
+			<value>96</value>
+			<value>12</value>
+			<value>3</value>
+		</item>
+		<item name="readOneByID(...) at ./src\services\ItemService.js:22">
+			<value>97</value>
+			<value>9</value>
+			<value>2</value>
+		</item>
+		<item name="uuidv4(...) at ./src\services\ItemService.js:34">
+			<value>98</value>
+			<value>8</value>
+			<value>2</value>
+		</item>
+		<item name="updateOneByID(...) at ./src\services\ItemService.js:43">
+			<value>99</value>
+			<value>9</value>
+			<value>2</value>
+		</item>
+		<item name="deleteOneByID(...) at ./src\services\ItemService.js:53">
+			<value>100</value>
+			<value>9</value>
+			<value>2</value>
+		</item>
+		<average label="NCSS" value="17.73"/>
+		<average label="CCN" value="2.05"/>
+		<item name="readAll(...) at ./src\services\ProductItemService.js:9">
+			<value>101</value>
+			<value>12</value>
+			<value>3</value>
+		</item>
+		<item name="readOneByID(...) at ./src\services\ProductItemService.js:22">
+			<value>102</value>
+			<value>9</value>
+			<value>2</value>
+		</item>
+		<item name="uuidv4(...) at ./src\services\ProductItemService.js:34">
+			<value>103</value>
+			<value>10</value>
+			<value>2</value>
+		</item>
+		<item name="updateOneByID(...) at ./src\services\ProductItemService.js:45">
+			<value>104</value>
+			<value>12</value>
+			<value>2</value>
+		</item>
+		<item name="deleteOneByID(...) at ./src\services\ProductItemService.js:58">
+			<value>105</value>
+			<value>9</value>
+			<value>2</value>
+		</item>
+		<average label="NCSS" value="17.38095238095238"/>
+		<average label="CCN" value="2.057142857142857"/>
+		<item name="readAll(...) at ./src\services\ProductService.js:9">
+			<value>106</value>
+			<value>12</value>
+			<value>3</value>
+		</item>
+		<item name="readOneByID(...) at ./src\services\ProductService.js:22">
+			<value>107</value>
+			<value>9</value>
+			<value>2</value>
+		</item>
+		<item name="uuidv4(...) at ./src\services\ProductService.js:34">
+			<value>108</value>
+			<value>8</value>
+			<value>2</value>
+		</item>
+		<item name="updateOneByID(...) at ./src\services\ProductService.js:43">
+			<value>109</value>
+			<value>9</value>
+			<value>2</value>
+		</item>
+		<item name="deleteOneByID(...) at ./src\services\ProductService.js:53">
+			<value>110</value>
+			<value>9</value>
+			<value>2</value>
+		</item>
+		<average label="NCSS" value="17.01818181818182"/>
+		<average label="CCN" value="2.0636363636363635"/>
+		<item name="readAll(...) at ./src\services\ProductTransactionHistoryService.js:10">
+			<value>111</value>
+			<value>15</value>
+			<value>3</value>
+		</item>
+		<item name="readOneByID(...) at ./src\services\ProductTransactionHistoryService.js:26">
+			<value>112</value>
+			<value>14</value>
+			<value>2</value>
+		</item>
+		<item name="uuidv4(...) at ./src\services\ProductTransactionHistoryService.js:46">
+			<value>113</value>
+			<value>13</value>
+			<value>2</value>
+		</item>
+		<item name="updateOneByID(...) at ./src\services\ProductTransactionHistoryService.js:60">
+			<value>114</value>
+			<value>20</value>
+			<value>2</value>
+		</item>
+		<item name="deleteOneByID(...) at ./src\services\ProductTransactionHistoryService.js:81">
+			<value>115</value>
+			<value>14</value>
+			<value>2</value>
+		</item>
+		<average label="NCSS" value="16.93913043478261"/>
+		<average label="CCN" value="2.0695652173913044"/>
+		<item name="log(...) at ./src\tools\Debugger.js:2">
+			<value>116</value>
+			<value>3</value>
+			<value>1</value>
+		</item>
+		<item name="error(...) at ./src\tools\Debugger.js:6">
+			<value>117</value>
+			<value>3</value>
+			<value>1</value>
+		</item>
+		<average label="NCSS" value="16.700854700854702"/>
+		<average label="CCN" value="2.051282051282051"/>
+		<item name="(anonymous)(...) at ./src\tools\Wrangler.js:4">
+			<value>118</value>
+			<value>1</value>
+			<value>1</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\tools\Wrangler.js:5">
+			<value>119</value>
+			<value>12</value>
+			<value>4</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\tools\Wrangler.js:17">
+			<value>120</value>
+			<value>8</value>
+			<value>5</value>
+		</item>
+		<item name="filterArrayByQuery(...) at ./src\tools\Wrangler.js:2">
+			<value>121</value>
+			<value>7</value>
+			<value>1</value>
+		</item>
+		<average label="NCSS" value="16.380165289256198"/>
+		<average label="CCN" value="2.074380165289256"/>
+		<item name="(anonymous)(...) at ./src\app.js:36">
+			<value>122</value>
+			<value>5</value>
+			<value>1</value>
+		</item>
+		<item name="(anonymous)(...) at ./src\app.js:44">
+			<value>123</value>
+			<value>5</value>
+			<value>2</value>
+		</item>
+		<average label="NCSS" value="16.195121951219512"/>
+		<average label="CCN" value="2.065040650406504"/>
+		<item name="(anonymous)(...) at ./src\index.js:4">
+			<value>124</value>
+			<value>3</value>
+			<value>1</value>
+		</item>
+		<average label="NCSS" value="16.088709677419356"/>
+		<average label="CCN" value="2.056451612903226"/>
+		<average label="NCSS" value="16.088709677419356"/>
+		<average label="CCN" value="2.056451612903226"/>
+	</measure>
+	<measure type="File">
+		<labels>
+			<label>Nr.</label>
+			<label>NCSS</label>
+			<label>CCN</label>
+			<label>Functions</label>
+		</labels>
+		<item name="./src\controllers\AccountController.js">
+			<value>1</value>
+			<value>109</value>
+			<value>10</value>
+			<value>5</value>
+		</item>
+		<item name="./src\controllers\AuthenticationController.js">
+			<value>2</value>
+			<value>47</value>
+			<value>4</value>
+			<value>2</value>
+		</item>
+		<item name="./src\controllers\InventoryControlHistoryController.js">
+			<value>3</value>
+			<value>126</value>
+			<value>10</value>
+			<value>5</value>
+		</item>
+		<item name="./src\controllers\ItemCombinationController.js">
+			<value>4</value>
+			<value>122</value>
+			<value>10</value>
+			<value>5</value>
+		</item>
+		<item name="./src\controllers\ItemController.js">
+			<value>5</value>
+			<value>145</value>
+			<value>10</value>
+			<value>5</value>
+		</item>
+		<item name="./src\controllers\ProductController.js">
+			<value>6</value>
+			<value>145</value>
+			<value>10</value>
+			<value>5</value>
+		</item>
+		<item name="./src\controllers\ProductItemController.js">
+			<value>7</value>
+			<value>120</value>
+			<value>10</value>
+			<value>5</value>
+		</item>
+		<item name="./src\controllers\ProductTransactionHistoryController.js">
+			<value>8</value>
+			<value>132</value>
+			<value>10</value>
+			<value>5</value>
+		</item>
+		<item name="./src\dao\PostgresDB.js">
+			<value>9</value>
+			<value>31</value>
+			<value>5</value>
+			<value>3</value>
+		</item>
+		<item name="./src\repositories\AccountRepository.js">
+			<value>10</value>
+			<value>69</value>
+			<value>10</value>
+			<value>5</value>
+		</item>
+		<item name="./src\repositories\InventoryControlRepository.js">
+			<value>11</value>
+			<value>80</value>
+			<value>10</value>
+			<value>5</value>
+		</item>
+		<item name="./src\repositories\ItemCombinationRepository.js">
+			<value>12</value>
+			<value>81</value>
+			<value>10</value>
+			<value>5</value>
+		</item>
+		<item name="./src\repositories\ItemRepository.js">
+			<value>13</value>
+			<value>125</value>
+			<value>14</value>
+			<value>7</value>
+		</item>
+		<item name="./src\repositories\ProductItemRepository.js">
+			<value>14</value>
+			<value>68</value>
+			<value>10</value>
+			<value>5</value>
+		</item>
+		<item name="./src\repositories\ProductRepository.js">
+			<value>15</value>
+			<value>104</value>
+			<value>12</value>
+			<value>6</value>
+		</item>
+		<item name="./src\repositories\ProductTransactionRepository.js">
+			<value>16</value>
+			<value>85</value>
+			<value>10</value>
+			<value>5</value>
+		</item>
+		<item name="./src\services\AccountService.js">
+			<value>17</value>
+			<value>58</value>
+			<value>11</value>
+			<value>5</value>
+		</item>
+		<item name="./src\services\AuthenticationService.js">
+			<value>18</value>
+			<value>59</value>
+			<value>6</value>
+			<value>2</value>
+		</item>
+		<item name="./src\services\InventoryControlHistoryService.js">
+			<value>19</value>
+			<value>86</value>
+			<value>11</value>
+			<value>5</value>
+		</item>
+		<item name="./src\services\ItemCombinationService.js">
+			<value>20</value>
+			<value>71</value>
+			<value>11</value>
+			<value>5</value>
+		</item>
+		<item name="./src\services\ItemService.js">
+			<value>21</value>
+			<value>58</value>
+			<value>11</value>
+			<value>5</value>
+		</item>
+		<item name="./src\services\ProductItemService.js">
+			<value>22</value>
+			<value>63</value>
+			<value>11</value>
+			<value>5</value>
+		</item>
+		<item name="./src\services\ProductService.js">
+			<value>23</value>
+			<value>58</value>
+			<value>11</value>
+			<value>5</value>
+		</item>
+		<item name="./src\services\ProductTransactionHistoryService.js">
+			<value>24</value>
+			<value>91</value>
+			<value>11</value>
+			<value>5</value>
+		</item>
+		<item name="./src\tools\Debugger.js">
+			<value>25</value>
+			<value>9</value>
+			<value>2</value>
+			<value>2</value>
+		</item>
+		<item name="./src\tools\Wrangler.js">
+			<value>26</value>
+			<value>28</value>
+			<value>11</value>
+			<value>4</value>
+		</item>
+		<item name="./src\app.js">
+			<value>27</value>
+			<value>34</value>
+			<value>3</value>
+			<value>2</value>
+		</item>
+		<item name="./src\index.js">
+			<value>28</value>
+			<value>5</value>
+			<value>1</value>
+			<value>1</value>
+		</item>
+		<item name="./src\routes.js">
+			<value>29</value>
+			<value>25</value>
+			<value>0</value>
+			<value>0</value>
+		</item>
+		<average label="NCSS" value="77.03448275862068"/>
+		<average label="CCN" value="8.793103448275861"/>
+		<average label="Functions" value="4.275862068965517"/>
+		<sum label="NCSS" value="2234"/>
+		<sum label="CCN" value="255"/>
+		<sum label="Functions" value="124"/>
+		<average label="NCSS" value="16.088709677419356"/>
+		<average label="CCN" value="2.056451612903226"/>
+	</measure>
+</cppncss>
+
